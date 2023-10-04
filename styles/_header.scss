@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
+  margin-bottom: 120px;
+  @media (max-width:$xl) {
+    display: block;
+    padding-left: 34px;
+    padding-right: 16px;
+  }
+  background-color: var(--bg-color);
+
+  .logo {
+    margin-right: 136px;
+    @media (max-width:$xl) {
+      margin-right: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    @media (max-width:$xl) {
+      justify-content: space-between;
+    }
+  }
+
+  &__nav {
+    margin-right: 174px;
+    @media (max-width:1200px) {
+      display: none;
+    }
+  
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 10px;
+  }
+
+  &__login-button{
+    @media (max-width:$xl) {
+      
+    }
+  }
+
+  &__mobile-button{
+    background-color: inherit;
+    margin-left: 16px;
+    display: none;
+    @media (max-width:$xl) {
+      display: block;
+    }
+  }
+}

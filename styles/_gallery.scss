@@ -1,0 +1,16 @@
+.gallery-section {
+    padding-top: 200px;
+
+    &__title {
+        padding: 10px;
+        margin: bottom 0;
+        text-transform: capitalize;
+        text-align: center;
+    }
+        &__subtitle {
+            padding: 10px;
+            margin-bottom: 44px;
+            text-align: center;
+    
+        }
+}

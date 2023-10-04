@@ -1,0 +1,32 @@
+.partners-section {
+    padding-top: 200px;
+
+    &__title {
+        padding: 10px;
+        margin: bottom 0;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &__subtitle {
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    &__brands {
+        padding: 50px;
+
+        &-image {
+            margin-right: 74px;
+        }
+
+        &-image:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__button {
+        margin-bottom: 50px;
+    }
+}

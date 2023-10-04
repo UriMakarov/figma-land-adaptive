@@ -1,2 +1,1 @@
-# figma-land-adaptive
-figma-land-adaptive
+https://urimakarov.github.io/figma-land-adaptive/
