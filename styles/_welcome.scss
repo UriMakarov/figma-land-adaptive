@@ -7,8 +7,7 @@
 
     font-size: 80px;
     line-height: 88px;
-
-    @media (max-width:$xl) {
+    @include mq('tablet-wide'){
       font-size: 52px;
       line-height: 66px;
       padding-left: 64px;
@@ -31,7 +30,7 @@
   font-size: 20px;
   line-height: 30px;
 
-  @media (max-width:$xl) {
+  @include mq('tablet-wide') {
     padding-left: 64px;
     padding-right: 64px;
     br{
@@ -45,7 +44,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 36px;
-  @media (max-width:$xl) {
+  @include mq('tablet-wide') {
     flex-direction: column;
     align-items: center;
     margin-bottom: 56px;
@@ -57,7 +56,7 @@
 
 &__link:first-child {
   margin-right: 36px;
-  @media (max-width:$xl) {
+  @include mq('tablet-wide') {
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -72,7 +71,7 @@
 
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%);
 
-  @media (max-width:$xl) {
+  @include mq('tablet-wide') {
     height: 328px;
   }
 }

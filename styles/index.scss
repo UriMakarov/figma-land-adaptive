@@ -1,12 +1,14 @@
-@import "./_breakpoints.scss";
+@import "./_mixins.scss";
 @import "./_features.scss";
 @import "./_welcome.scss";
 @import "./_header.scss";
 @import "./_section.scss";
 @import "./_content.scss";
-@import "./gallery.scss";
-@import "./partners.scss";
-@import "./testimonials";
+@import "./_gallery.scss";
+@import "./_partners.scss";
+@import "./_promo.scss";
+@import "./_testimonials.scss";
+@import "./_footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
 
 :root {
@@ -20,6 +22,9 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: var(--bg-color);
   color: #fff;
+  &.hidden{
+    overflow-y: hidden;
+  }
 }
 
 ul {

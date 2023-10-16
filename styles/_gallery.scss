@@ -7,10 +7,39 @@
         text-transform: capitalize;
         text-align: center;
     }
-        &__subtitle {
-            padding: 10px;
-            margin-bottom: 44px;
-            text-align: center;
-    
-        }
+
+    &__subtitle {
+        padding: 10px;
+        margin-bottom: 44px;
+        text-align: center;
+
+    }
+
+    &__images_1{
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+        margin-bottom: 44px;
+        @include mq('tablet-wide') {
+            flex-direction: column;
+            padding-left: 110px;
+            padding-right: 110px;
+          }          
+          @include mq('phone-wide') {
+            flex-direction: column;
+            padding-left: 50px;
+            padding-right: 50px;
+          }  
+    }
+
+    &__images_2{
+        display: flex;
+        justify-content: center;        
+        gap: 33px;
+        margin-bottom: 44px;        
+        @include mq('tablet-wide') {
+            display: none;
+          }        
+    }
+
 }

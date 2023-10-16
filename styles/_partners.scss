@@ -15,18 +15,27 @@
     }
 
     &__brands {
-        padding: 50px;
+        justify-items: end;
+        padding: 50px 0px;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(134px, auto));
+        gap: 74px;
 
-        &-image {
-            margin-right: 74px;
+        @include mq('tablet-wide') {
+            grid-template-columns: repeat(3, minmax(110px, auto));
+
         }
 
-        &-image:last-child {
-            margin-right: 0px;
+        @include mq('phone-wide') {
+            grid-template-columns: repeat(2, minmax(110px, auto));
+            gap: 30px;
+            justify-items: center;
         }
-    }
 
-    &__button {
-        margin-bottom: 50px;
+
+
+        &__button {
+            margin-bottom: 50px;
+        }
     }
 }
