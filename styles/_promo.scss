@@ -1,71 +1,49 @@
 .promo-section {
-    &__panel {
-        margin: 55px 180px;
-        background-color: #343434;
-        border: 1px solid #343434;
+    &__grid {
+        margin: 55px 10vw;
+        background-color: var(--bg-light-color, #343434);
+        border: 1px solid var(--bg-light-color, #343434);
         border-radius: 33px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-
+        display: grid;
+        grid-template: auto / auto auto;
 
         @include mq('tablet-wide') {
-            margin: 55px 0px;
-            flex-direction: column;
+            grid-template: auto auto /auto;
+            margin: 55px 0;
+            background-color: var(--bg-second-color,#1E1E1E);
+            border: none;
+            border-radius: 0;
 
         }
-
-        &-left {
+        &-left{
             display: flex;
             flex-direction: column;
-            padding-left: 94px;
-            margin-right: 86px;
-
-
-
-
-            &-title {
-                font-size: 52px;
-                font-weight: 400;
-                box-sizing: border-box;
-
-
-                @include mq('tablet-wide') {
-                    font-size: 42px;   
-                }
-            }
-
-            &-button-panel {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 78px;
-                margin-top: 37px;
-
-                @include mq('tablet-wide') {
-                    justify-content: center;
-                }
-            }
-
-
-            &-button {}
+            align-items: center;
         }
+
     }
 
-    &__panel-right {
-        display: flex;
-        justify-content: center;
-
+    &__title {
+        font-size: 42px;
+        font-weight: 400;
+        margin-top: 50px;
         @include mq('tablet-wide') {
-            justify-content: center;
+
         }
     }
 
-
-    &-image {
-        display: flex;
-        justify-content: center;
+    &__button {
+        margin-top: 37px;
 
     }
+    &__image{
+        max-width: 585px;
+        width: 100%;
+        justify-self: end;
+        @include mq('tablet-wide') {
+            justify-self:center;
+        }        
+    }
+
+
 }
