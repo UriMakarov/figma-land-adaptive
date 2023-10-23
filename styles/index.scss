@@ -13,18 +13,23 @@
 
 :root {
   --bg-color: #181818;
-  --bg-light-color:#343434;
-  --bg-second-color:#1E1E1E;
+  --bg-light-color: #343434;
+  --bg-second-color: #1E1E1E;
 }
 
 /* base styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 
   font-family: "Work Sans", sans-serif;
   background-color: var(--bg-color);
   color: #fff;
-  &.hidden{
+
+  &.hidden {
     overflow-y: hidden;
   }
 }
@@ -61,6 +66,7 @@ p {
 p {
   font-weight: 400;
 }
+
 /* ------------ */
 
 
