@@ -1,11 +1,15 @@
 .content-section{
     padding-top: 150px;
-    padding-left: 299px;
-    padding-right: 299px;
-    @media (max-width:$xl) {
+    padding-left: 297px;
+    padding-right: 297px;
+    @include mq('tablet-wide') {
         padding-left: 100px;
         padding-right: 100px;
-      }    
+      }
+      @include mq('phone-wide') {
+        padding-left: 40px;
+        padding-right: 40px;
+      }       
     &__title{
         padding: 10px;
         margin: bottom 0;
@@ -18,15 +22,11 @@
         text-align: center;
     }    
     &__items{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
         gap: 33px;
-        @media (max-width:$xl) {
-            grid-template-columns: 1fr;
+        @include mq('tablet-wide') {
+            flex-direction: column;
           }
     }
-
 
 
     &__item {
@@ -38,7 +38,7 @@
         border: 1px solid black;
         border-radius: 10px;
         // max-width: 49%;
-        // @media (max-width:$xl) {
+        // @include mq('tablet-wide') {
         //     max-width: 100%;
         //   }
           
@@ -61,6 +61,7 @@
 
         &-image{
             width: 100%;
+            margin-bottom: 40px;
         }
     
     }

@@ -7,16 +7,24 @@
         margin-bottom: 50px;
         text-transform: capitalize;
         text-align: center;
+        @include mq('phone-wide') {
+            font-size: 48px;
+        }
+
     }
 
 
     &__list {
         column-count: 2;
-        @media (max-width:$xl) {
+        @include mq('tablet-wide') {
             column-count: 1;
             
-         
           }
+          @include mq('phone-wide') {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
 
 
        &-item {
